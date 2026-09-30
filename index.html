@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yuri Ravel | Conteúdo e Estratégia — Mídia kit</title>
+<meta name="description" content="Vídeos, cobertura de eventos, design e estratégia para negócios de Rio Verde e região.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%2373f352'/><text x='50' y='68' font-size='58' text-anchor='middle' font-family='sans-serif' font-weight='700' fill='%23033820'>YR</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--g:#73f352;--k:#000;--d:#033820;--p:#fdf5e3}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--k);color:var(--p);font:400 17px/1.6 "Source Sans 3",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.f{font-family:Sora,system-ui,sans-serif}
+h1,h2,h3{line-height:1.15;margin:0}
+p{margin:8px 0 0;max-width:62ch}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--g);outline-offset:3px}
+.w{max-width:980px;margin:0 auto;padding:0 22px}
+section{padding:72px 0;position:relative}
+h2{font-size:clamp(1.7rem,4.5vw,2.4rem);margin-bottom:8px}
+#bar{position:fixed;top:0;left:0;right:0;height:4px;background:var(--g);transform:scaleX(0);transform-origin:0;z-index:60}
+nav{position:sticky;top:0;z-index:50;background:rgba(0,0,0,.78);backdrop-filter:blur(12px);padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid #123}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font:700 1.05rem Sora,sans-serif;text-decoration:none;color:var(--g)}
+.links{display:flex;gap:22px;align-items:center}
+.links a{text-decoration:none;font-size:.95rem;opacity:.85}
+.links a:hover{opacity:1;color:var(--g)}
+@media(max-width:760px){.links a:not(.btn){display:none}}
+.btn{display:inline-block;padding:13px 22px;border-radius:99px;font:600 .98rem Sora,sans-serif;text-decoration:none;border:2px solid var(--g);background:transparent;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-3px) scale(1.03)}
+.btn.p{background:var(--g);color:var(--d)}
+.btn.s{padding:9px 16px;font-size:.88rem}
+.hero{padding:88px 0 40px;overflow:hidden;--mx:50%;--my:30%}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(420px circle at var(--mx) var(--my),rgba(115,243,82,.22),transparent 70%);pointer-events:none}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.55;animation:fl 12s ease-in-out infinite alternate}
+.b1{width:340px;height:340px;background:var(--d);top:-60px;right:-80px}
+.b2{width:240px;height:240px;background:#1d7a2f;bottom:20px;left:-90px;animation-delay:-5s}
+@keyframes fl{to{transform:translate(40px,50px) scale(1.15)}}
+.hero .w{position:relative}
+.tag{display:inline-block;border:1px solid var(--g);color:var(--g);border-radius:99px;padding:4px 14px;font-size:.9rem;margin-bottom:22px}
+h1{font-size:clamp(2.5rem,8.5vw,5rem);font-weight:700;letter-spacing:-.025em}
+h1 em{font-style:normal;color:var(--g)}
+.type{font:600 clamp(1.15rem,3.4vw,1.6rem) Sora,sans-serif;margin-top:22px;min-height:2.2em}
+.type b{color:var(--g)}
+.type i{display:inline-block;width:3px;height:1.1em;background:var(--g);vertical-align:-3px;margin-left:3px;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.mq{border-block:1px solid #14301c;background:var(--d);overflow:hidden;white-space:nowrap;padding:14px 0;margin-top:56px}
+.mq div{display:inline-block;animation:mq 26s linear infinite;font:600 1.1rem Sora,sans-serif}
+.mq span{margin:0 22px}.mq span:nth-child(even){color:var(--g)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin-top:8px}
+.stat{border-left:3px solid var(--g);padding-left:14px}
+.stat b{display:block;font:700 2.6rem Sora,sans-serif;color:var(--g);line-height:1}
+.deep{background:var(--d)}
+.light{background:var(--p);color:var(--d)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.rv.on{opacity:1;transform:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:28px;align-items:start}
+.card{background:#fff;border-radius:22px;padding:22px;transition:transform .25s,box-shadow .25s;border:2px solid transparent}
+.card:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(3,56,32,.22)}
+.card h3{font-size:1.15rem}
+.card .ic{font-size:1.8rem;display:block;margin-bottom:8px}
+.more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s}
+.more>div{overflow:hidden}
+.card.open .more{grid-template-rows:1fr}
+.card.open{border-color:var(--d)}
+.tg{margin-top:12px;background:none;border:0;font-weight:600;color:var(--d);padding:4px 0;text-decoration:underline}
+.pk{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:26px}
+.pb{text-align:left;background:var(--k);border:2px solid #1c3a26;border-radius:20px;padding:18px;transition:transform .2s,border-color .2s,background .2s}
+.pb:hover{transform:translateY(-4px)}
+.pb[aria-pressed=true]{background:var(--g);color:var(--d);border-color:var(--g)}
+.pb .n{font:700 1.15rem Sora,sans-serif}
+.pb .v{font:700 1.9rem Sora,sans-serif;margin:6px 0}
+.pb small{display:block;font-size:.92rem;line-height:1.4}
+.ex{background:var(--k);border-radius:20px;padding:20px;margin-top:16px;display:grid;gap:14px}
+.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.st{display:inline-flex;align-items:center;gap:10px}
+.st button,.chip{border:2px solid var(--g);background:none;border-radius:99px;min-width:38px;height:38px;font-weight:700;padding:0 14px}
+.chip[aria-pressed=true]{background:var(--g);color:var(--d)}
+.chip[disabled]{opacity:.5;cursor:default}
+input[type=date]{background:var(--d);color:var(--p);border:2px solid #1c3a26;border-radius:12px;padding:8px 12px;font:inherit;color-scheme:dark}
+.tot{font:700 2.1rem Sora,sans-serif;color:var(--g)}
+.tabs{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.tb{border:2px solid var(--d);border-radius:99px;background:none;padding:8px 18px;font-weight:600;color:var(--d);transition:background .2s}
+.tb[aria-selected=true]{background:var(--d);color:var(--p)}
+.tp{margin-top:18px;background:#fff;border-radius:22px;padding:24px;min-height:130px;animation:fi .4s}
+@keyframes fi{from{opacity:0;transform:translateY(10px)}}
+.tp h3{font-size:1.3rem}
+details{background:var(--d);border-radius:16px;padding:16px 20px;margin-top:12px}
+summary{cursor:pointer;font:600 1.02rem Sora,sans-serif;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";color:var(--g);font-size:1.4rem;line-height:1;transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+.ct{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-top:26px}
+.ci{background:var(--d);border-radius:20px;padding:20px;transition:transform .2s}
+.ci:hover{transform:translateY(-4px)}
+.ci b{display:block;color:var(--g);font:600 .95rem Sora,sans-serif}
+.ci span{display:block;font-size:1.1rem;word-break:break-word;margin:4px 0 12px}
+.ci .row{justify-content:flex-start}
+footer{padding:30px 0 90px;font-size:.9rem;opacity:.7}
+#fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:55;width:60px;height:60px;border-radius:50%;background:var(--g);color:var(--d);display:grid;place-items:center;text-decoration:none;font:700 .8rem Sora,sans-serif;box-shadow:0 0 0 0 rgba(115,243,82,.6);animation:pl 2.2s infinite}
+@keyframes pl{70%{box-shadow:0 0 0 18px rgba(115,243,82,0)}100%{box-shadow:0 0 0 0 rgba(115,243,82,0)}}
+#toast{position:fixed;left:50%;bottom:96px;transform:translate(-50%,20px);background:var(--g);color:var(--d);padding:10px 20px;border-radius:99px;font-weight:600;opacity:0;pointer-events:none;transition:.3s;z-index:70}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<nav><div class="w">
+  <a class="logo" href="#topo">Yuri Ravel</a>
+  <div class="links">
+    <a href="#servicos">Serviços</a><a href="#pacotes">Pacotes</a><a href="#processo">Processo</a><a href="#faq">Dúvidas</a>
+    <a class="btn p s" href="#contato">Contato</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="topo">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="w">
+    <span class="tag">Yuri Ravel | Conteúdo e Estratégia</span>
+    <h1>Conteúdo que faz o seu negócio <em>ser lembrado.</em></h1>
+    <div class="type">Eu cuido de <b id="tw"></b><i></i></div>
+    <p style="margin-top:14px">Vídeos, cobertura de eventos, design e estratégia para empresas de Rio Verde e região que querem aparecer com qualidade e vender mais.</p>
+    <div class="btns">
+      <a class="btn p" href="#pacotes">Monte o seu pacote</a>
+      <a class="btn" href="https://wa.me/5564993326251?text=Ol%C3%A1%20Yuri%2C%20vi%20seu%20m%C3%ADdia%20kit%20e%20gostaria%20de%20um%20or%C3%A7amento.">Chamar no WhatsApp</a>
+    </div>
+  </div>
+  <div class="mq" aria-hidden="true"><div id="mq"></div></div>
+</header>
+
+<section><div class="w rv">
+  <h2>Quem é o Yuri</h2>
+  <p>Sou empreendedor de Rio Verde, Goiás, e cuido de tudo sozinho, do começo ao fim: conversa com o cliente, roteiro, gravação, edição, design e estratégia. Você fala direto comigo, sem intermediários, e o seu conteúdo sempre tem um objetivo claro.</p>
+  <p>Mesmo sem equipamento de estúdio, entrego imagem limpa, áudio de qualidade e edição acima da média, porque o que faz um vídeo funcionar é ideia, ritmo e cuidado.</p>
+  <div class="stats" style="margin-top:32px">
+    <div class="stat"><b data-to="6">0</b>serviços</div>
+    <div class="stat"><b data-to="3">0</b>pacotes de cobertura</div>
+    <div class="stat"><b data-to="5">0</b>etapas simples</div>
+    <div class="stat"><b data-to="1">0</b>profissional cuidando de tudo</div>
+  </div>
+</div></section>
+
+<section class="light" id="servicos"><div class="w rv">
+  <h2>O que eu faço</h2>
+  <p>Toque em cada serviço para ver como funciona e pedir um orçamento na hora.</p>
+  <div class="grid" id="sv"></div>
+</div></section>
+
+<section class="deep" id="pacotes"><div class="w rv">
+  <h2>Monte a cobertura do seu evento</h2>
+  <p>Escolha o pacote, adicione os extras e veja o valor na hora. Depois é só enviar o pedido pelo WhatsApp.</p>
+  <div class="pk" id="pk"></div>
+  <div class="ex">
+    <div class="row"><span><b>Reels adicionais</b><br><small>+ R$ 150 cada (a partir de)</small></span>
+      <span class="st"><button id="mn" aria-label="Diminuir reels">−</button><b id="rc" class="f">0</b><button id="pl" aria-label="Aumentar reels">+</button></span></div>
+    <div class="row"><span><b>Entrega em até 24h</b><br><small>+ R$ 150, seu material passa na frente da fila</small></span><button class="chip" id="ex24" aria-pressed="false">Adicionar</button></div>
+    <div class="row"><span><b>Fotos tratadas</b><br><small id="fs">+ R$ 100 (a partir de)</small></span><button class="chip" id="exf" aria-pressed="false">Adicionar</button></div>
+    <div class="row"><label for="dt"><b>Data do evento</b> (opcional)</label><input type="date" id="dt"></div>
+    <div class="row"><div><small>Estimativa a partir de</small><div class="tot" id="tot">R$ 750</div></div><a class="btn p" id="send" href="#">Enviar pedido no WhatsApp</a></div>
+  </div>
+  <p style="margin-top:14px;font-size:.92rem;opacity:.8">O valor final é confirmado na proposta. Pagamento: cartão parcelado (juros da maquininha por conta do cliente), boleto bancário e condições negociáveis.</p>
+</div></section>
+
+<section class="light" id="processo"><div class="w rv">
+  <h2>Como funciona</h2>
+  <p>Clique em cada etapa.</p>
+  <div class="tabs" role="tablist" id="tb"></div>
+  <div class="tp" id="tp" role="tabpanel"></div>
+</div></section>
+
+<section id="faq"><div class="w rv">
+  <h2>Dúvidas frequentes</h2>
+  <details><summary>Como funciona o pagamento?</summary><p>Você reserva a data com um sinal de 50% e paga o saldo até a entrega final. Aceito cartão de crédito parcelado (os juros da maquininha ficam por conta do cliente) e boleto bancário. Se precisar de outra condição, a gente negocia.</p></details>
+  <details><summary>Qual é o prazo de entrega?</summary><p>De 3 a 5 dias úteis nos pacotes Essencial e Completo. No Premium, o teaser sai no mesmo dia e os reels em até 3 dias úteis. Se precisar mais rápido, existe a entrega em 24h.</p></details>
+  <details><summary>Posso pedir ajustes?</summary><p>Pode. Cada reel tem 2 rodadas de ajuste incluídas antes da versão final.</p></details>
+  <details><summary>Você atende fora de Rio Verde?</summary><p>Atendo. O deslocamento fora da cidade é cobrado à parte e combinado antes de fechar.</p></details>
+  <details><summary>Posso usar o material como quiser?</summary><p>Os vídeos são seus para postar e divulgar o seu evento ou negócio. Eu posso usar trechos no meu portfólio, sempre com a sua autorização.</p></details>
+</div></section>
+
+<section class="deep" id="contato"><div class="w rv">
+  <h2>Vamos conversar?</h2>
+  <p>Conte o que você precisa e eu respondo com o melhor caminho para o seu negócio.</p>
+  <div class="ct">
+    <div class="ci"><b>WhatsApp</b><span>(64) 99332-6251</span><div class="row"><a class="btn p s" href="https://wa.me/5564993326251?text=Ol%C3%A1%20Yuri%2C%20vi%20seu%20m%C3%ADdia%20kit%20e%20gostaria%20de%20um%20or%C3%A7amento.">Abrir conversa</a><button class="btn s" data-copy="(64) 99332-6251">Copiar</button></div></div>
+    <div class="ci"><b>Instagram</b><span>@o_yuriravel</span><div class="row"><a class="btn p s" href="https://instagram.com/o_yuriravel">Ver perfil</a></div></div>
+    <div class="ci"><b>E-mail</b><span>yuriravelofc@gmail.com</span><div class="row"><a class="btn p s" href="mailto:yuriravelofc@gmail.com">Enviar e-mail</a><button class="btn s" data-copy="yuriravelofc@gmail.com">Copiar</button></div></div>
+  </div>
+</div></section>
+
+<footer><div class="w">Yuri Ravel | Conteúdo e Estratégia · Rio Verde, GO</div></footer>
+<a id="fab" href="https://wa.me/5564993326251?text=Ol%C3%A1%20Yuri%2C%20vi%20seu%20m%C3%ADdia%20kit%20e%20gostaria%20de%20um%20or%C3%A7amento." aria-label="Chamar no WhatsApp">Zap</a>
+<div id="toast" role="status"></div>
+
+<script>
+const WA='5564993326251',$=s=>document.querySelector(s),link=m=>`https://wa.me/${WA}?text=${encodeURIComponent(m)}`;
+const toast=t=>{const e=$('#toast');e.textContent=t;e.classList.add('on');setTimeout(()=>e.classList.remove('on'),1800)};
+/* progresso e spotlight */
+addEventListener('scroll',()=>{$('#bar').style.transform=`scaleX(${scrollY/(document.documentElement.scrollHeight-innerHeight)})`},{passive:true});
+const hero=$('.hero');hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();hero.style.setProperty('--mx',e.clientX-r.left+'px');hero.style.setProperty('--my',e.clientY-r.top+'px')});
+/* digitação */
+const words=['vídeos que prendem a atenção.','eventos que viram conteúdo.','design que valoriza a sua marca.','estratégia que leva a vender.'];
+let wi=0,ci=0,del=false;const tw=$('#tw');
+if(matchMedia('(prefers-reduced-motion:reduce)').matches){tw.textContent=words[0]}else(function t(){const w=words[wi];ci+=del?-1:1;tw.textContent=w.slice(0,ci);let d=del?35:65;if(!del&&ci===w.length){del=true;d=1600}else if(del&&ci===0){del=false;wi=(wi+1)%words.length;d=350}setTimeout(t,d)})();
+/* faixa */
+const it=['Reels','Eventos','Design','Estratégia','Tráfego pago','Sites'];const row=it.map(x=>`<span>${x}</span><span>●</span>`).join('');$('#mq').innerHTML=row+row+row+row;
+/* serviços */
+const sv=[
+['🎬','Vídeos e reels','Roteiro, gravação e edição com legendas dinâmicas e ritmo pensado para reter o público.','Eu planejo a ideia, gravo, corto e legendo. Cada vídeo nasce de um roteiro com gancho, desenvolvimento e um fechamento que leva à ação.'],
+['🎉','Cobertura de eventos','Registro do seu evento com reels prontos para postar.','De 2 a 3 horas de cobertura, com edição profissional, legendas dinâmicas e entrega no prazo combinado. Veja os pacotes logo abaixo.'],
+['🧭','Estratégia de conteúdo','Planejamento e linha editorial ligados ao que você vende.','Organizo uma rotina semanal de conteúdo, defino os temas e crio roteiros que aproximam o seu negócio do público certo.'],
+['🚀','Tráfego pago','Campanhas para o seu conteúdo chegar a quem pode comprar.','Configuro e acompanho campanhas para levar os seus vídeos e ofertas para as pessoas com mais chance de virar cliente.'],
+['🎨','Design gráfico','Identidade visual e peças que deixam a marca profissional.','Logotipo, paleta, artes para redes sociais e materiais de apresentação, tudo com a mesma cara e a mesma qualidade.'],
+['💻','Sites e landing pages','Páginas rápidas para apresentar o negócio e gerar contatos.','Crio páginas bonitas e objetivas, com botões que levam direto ao seu WhatsApp, feitas para funcionar bem no celular.']];
+$('#sv').innerHTML=sv.map((s,i)=>`<div class="card"><span class="ic">${s[0]}</span><h3>${s[1]}</h3><p>${s[2]}</p><div class="more"><div><p>${s[3]}</p><p style="margin-top:12px"><a class="btn p s" target="_blank" rel="noopener" href="${link('Olá Yuri! Quero saber mais sobre: '+s[1])}">Pedir orçamento</a></p></div></div><button class="tg" aria-expanded="false">Ver mais</button></div>`).join('');
+document.querySelectorAll('.tg').forEach(b=>b.onclick=()=>{const c=b.closest('.card'),o=c.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Ver menos':'Ver mais'});
+/* montador de pacote */
+const P=[['Essencial',550,'Até 2h de cobertura e 2 reels. Entrega em até 5 dias úteis.'],['Completo',750,'Até 3h, 3 reels, capas e stories. O mais escolhido.'],['Premium',1000,'Tudo do Completo + teaser no mesmo dia e fotos tratadas.']];
+let pk=1,rc=0,e24=false,ef=false;
+$('#pk').innerHTML=P.map((p,i)=>`<button class="pb" data-i="${i}" aria-pressed="${i==1}"><span class="n">${p[0]}</span><div class="v">R$ ${p[1].toLocaleString('pt-BR')}</div><small>${p[2]}</small></button>`).join('');
+function up(){document.querySelectorAll('.pb').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.i===pk));const inc=pk===2;
+$('#exf').disabled=inc;$('#exf').setAttribute('aria-pressed',inc||ef);$('#exf').textContent=inc?'Incluso':(ef?'Adicionado':'Adicionar');$('#fs').textContent=inc?'Já incluídas no Premium':'+ R$ 100 (a partir de)';
+$('#ex24').setAttribute('aria-pressed',e24);$('#ex24').textContent=e24?'Adicionado':'Adicionar';$('#rc').textContent=rc;
+const t=P[pk][1]+rc*150+(e24?150:0)+(!inc&&ef?100:0);$('#tot').textContent='R$ '+t.toLocaleString('pt-BR');
+let m=`Olá Yuri! Quero o pacote ${P[pk][0]}`;const x=[];if(rc)x.push(rc+' reel(s) adicional(is)');if(e24)x.push('entrega em 24h');if(!inc&&ef)x.push('fotos tratadas');if(x.length)m+=' com: '+x.join(', ');
+const d=$('#dt').value;if(d)m+=`. Data do evento: ${d.split('-').reverse().join('/')}`;m+=`. Estimativa: R$ ${t.toLocaleString('pt-BR')}. Podemos conversar?`;$('#send').href=link(m);$('#send').target='_blank';$('#send').rel='noopener'}
+document.querySelectorAll('.pb').forEach(b=>b.onclick=()=>{pk=+b.dataset.i;up()});
+$('#mn').onclick=()=>{rc=Math.max(0,rc-1);up()};$('#pl').onclick=()=>{rc=Math.min(6,rc+1);up()};
+$('#ex24').onclick=()=>{e24=!e24;up()};$('#exf').onclick=()=>{ef=!ef;up()};$('#dt').onchange=up;up();
+/* etapas */
+const S=[['Conversa','Entendo o seu negócio, o seu público e o que você quer alcançar com o conteúdo ou com o evento.'],['Proposta','Você escolhe o pacote, recebe a proposta com escopo e prazos e reserva a data com o sinal.'],['Gravação','Eu vou até você com câmera, microfone de lapela e iluminação e capto os melhores momentos.'],['Edição','Cortes, legendas dinâmicas, trilha e ritmo pensados para funcionar nas redes sociais.'],['Entrega','Você recebe os vídeos no prazo combinado, pede os ajustes e eu finalizo a versão final.']];
+const tb=$('#tb'),tp=$('#tp');tb.innerHTML=S.map((s,i)=>`<button class="tb" role="tab" aria-selected="${i==0}" data-i="${i}">${i+1}. ${s[0]}</button>`).join('');
+const show=i=>{tb.querySelectorAll('.tb').forEach((b,j)=>b.setAttribute('aria-selected',i==j));tp.innerHTML=`<h3>${S[i][0]}</h3><p>${S[i][1]}</p>`;tp.style.animation='none';tp.offsetHeight;tp.style.animation=''};
+tb.onclick=e=>{const b=e.target.closest('.tb');if(b)show(+b.dataset.i)};show(0);
+/* copiar */
+document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=()=>{navigator.clipboard&&navigator.clipboard.writeText(b.dataset.copy).then(()=>toast('Copiado!'),()=>toast('Não foi possível copiar'))});
+/* entrada e contadores */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('on');e.target.querySelectorAll('[data-to]').forEach(n=>{const to=+n.dataset.to;let v=0;const s=setInterval(()=>{v++;n.textContent=v;if(v>=to)clearInterval(s)},260)});io.unobserve(e.target)}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+</script>
+</body>
+</html>
